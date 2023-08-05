@@ -1,0 +1,92 @@
+$color-pink: #E8AFE8;
+$color-purple: #C32DD5;
+
+.mainDiv {
+    background-color: $color-pink;
+    padding-inline: calc(40px + 2vw);
+    padding-top: 64px;
+    padding-bottom: 320px;
+}
+
+.inputBox {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 40px;
+}
+
+.searchInput {
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid $color-purple
+}
+
+.resetButton {
+    padding-inline: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+    display: inline-block;
+    width: fit-content;
+    background-image: linear-gradient(135deg, $color-purple 40%, #EA91FF);
+    color: white;
+    cursor: pointer;
+    border: 0;
+    border-radius: 10px;
+}
+
+.usersList {
+    display: flex;
+    flex-direction: column;
+    gap: 40px
+}
+
+.userItem {
+    color: white;
+    border: 2px solid $color-purple;
+    border-radius: 10px;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    transform: translateX(0);
+}
+  
+  .userItem.removing {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+.usernameBox {
+    display: flex;
+    gap: 20px;
+    font-size: calc(18px + (36 - 18) * ((100vw - 576px) / (1400 - 576)));
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.email {
+    font-size: calc(12px + (18 - 12) * ((100vw - 576px) / (1400 - 576)));
+}
+
+.userMainInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.removeButton {
+    color: $color-purple;
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  
+  .removeButton:hover,
+  .removeButton:focus {
+    color: #E81557;
+    text-decoration: none;
+    cursor: pointer;
+}
