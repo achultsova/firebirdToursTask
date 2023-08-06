@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/firebirdToursTask/static/css/main.a73812c7.css",
+    "main.js": "/firebirdToursTask/static/js/main.861398fc.js",
+    "index.html": "/firebirdToursTask/index.html",
+    "main.a73812c7.css.map": "/firebirdToursTask/static/css/main.a73812c7.css.map",
+    "main.861398fc.js.map": "/firebirdToursTask/static/js/main.861398fc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a73812c7.css",
+    "static/js/main.861398fc.js"
+  ]
+}
