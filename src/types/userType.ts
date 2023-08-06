@@ -28,13 +28,11 @@ export interface User {
     company: UserCompanyType;
 }
 
-export type UserState = User[];
+export type  UserState = User[];
 
 export interface AppState {
     loading: boolean;
-    data: UserState;
     filteredData: UserState; 
-    fetchedData: UserState;
     error: string;
     filter: string;
   }

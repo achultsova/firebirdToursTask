@@ -1,5 +1,5 @@
-import { FETCH_USERS_REQUEST, FETCH_USERS_SUCCESS, FETCH_USERS_FAILURE, FILTER_USERS, REMOVE_USER, RESET } from './actions';
-import { UserState } from './userType';
+import { FETCH_USERS_REQUEST, FETCH_USERS_SUCCESS, FETCH_USERS_FAILURE, FILTER_USERS, REMOVE_USER, RESET } from './actions'
+import { UserState } from './userType'
 
 interface FetchUsersRequestAction {
   type: typeof FETCH_USERS_REQUEST;

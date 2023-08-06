@@ -1,24 +1,29 @@
-import React from 'react';
+import React from 'react'
 
-const Highlight = ({ children = '', highlight = '' }) => {
-  if (!highlight.trim()) {
-    return <>{children}</>;
-  }
+type HighlightProps = {
+  children: string;
+  highlight: string;
+}
 
-  const regex = new RegExp(`(${highlight})`, 'i');
-  const parts = children.split(regex);
+const Highlight = ({ children = '', highlight = '' }: HighlightProps) => {
+    if (!highlight.trim()) {
+        return <>{children}</>
+    }
 
-  return (
-    <span>
-      {parts.filter(part => part).map((part, i) =>
-        regex.test(part) ? (
-          <span key={i} style={{ backgroundColor: 'red' }}>{part}</span>
-        ) : (
-          part
-        )
-      )}
-    </span>
-  );
-};
+    const regex = new RegExp(`(${highlight})`, 'i')
+    const parts = children.split(regex)
+
+    return (
+        <span>
+            {parts.filter(part => part).map((part, i) =>
+                regex.test(part) ? (
+                    <span key={i} style={{ backgroundColor: 'red' }}>{part}</span>
+                ) : (
+                    part
+                )
+            )}
+        </span>
+    )
+}
 
 export default Highlight
